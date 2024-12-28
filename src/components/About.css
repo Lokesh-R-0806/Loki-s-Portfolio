@@ -1,0 +1,197 @@
+body{
+    background-color: #080808;
+    color: aliceblue;
+    
+    
+}
+
+/* ABOUT-DIV 1 */
+.about-div1{
+  animation: see1 3s forwards ease-in 1;
+  float: right;
+  margin-right: 50px;
+  /* margin-top: 50px; */
+}
+.about-h1{
+    font-family: cursive;
+    
+}
+
+.about-para1{
+    font-size: larger;
+}
+
+
+
+
+
+/* BUTTON  */
+
+.about-btn {
+    --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+    --border-width: 0.125em;
+    --curve-size: 0.5em;
+    --blur: 30px;
+    --bg: #080312;
+    --color: #afffff;
+    color: var(--color);
+    cursor: pointer;
+    /* use position: relative; so that BG is only for .about-btn */
+    position: relative;
+    isolation: isolate;
+    display: inline-grid;
+    place-content: center;
+    padding: 0.5em 1.5em;
+    font-size: 17px;
+    border: 0;
+    text-transform: uppercase;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    clip-path: polygon(
+      /* Top-left */ 0% var(--curve-size),
+      var(--curve-size) 0,
+      /* top-right */ 100% 0,
+      100% calc(100% - var(--curve-size)),
+      /* bottom-right 1 */ calc(100% - var(--curve-size)) 100%,
+      /* bottom-right 2 */ 0 100%
+    );
+    transition: color 250ms;
+    margin-top: 20px;
+  }
+  
+  .about-btn::after,
+  .about-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+  
+  .about-btn::before {
+    background: var(--border-color);
+    background-size: 300% 300%;
+    animation: move-bg7234 5s ease infinite;
+    z-index: -2;
+  }
+  
+  @keyframes move-bg7234 {
+    0% {
+      background-position: 31% 0%;
+    }
+  
+    50% {
+      background-position: 70% 100%;
+    }
+  
+    100% {
+      background-position: 31% 0%;
+    }
+  }
+  
+  .about-btn::after {
+    background: var(--bg);
+    z-index: -1;
+    clip-path: polygon(
+      /* Top-left */ var(--border-width)
+        calc(var(--curve-size) + var(--border-width) * 0.5),
+      calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width),
+      /* top-right */ calc(100% - var(--border-width)) var(--border-width),
+      calc(100% - var(--border-width))
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+      /* bottom-right 1 */
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+        calc(100% - var(--border-width)),
+      /* bottom-right 2 */ var(--border-width) calc(100% - var(--border-width))
+    );
+    transition: clip-path 500ms;
+  }
+  
+  .about-btn:where(:hover, :focus)::after {
+    clip-path: polygon(
+      /* Top-left */ calc(100% - var(--border-width))
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+      calc(100% - var(--border-width)) var(--border-width),
+      /* top-right */ calc(100% - var(--border-width)) var(--border-width),
+      calc(100% - var(--border-width))
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+      /* bottom-right 1 */
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+        calc(100% - var(--border-width)),
+      /* bottom-right 2 */
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+        calc(100% - var(--border-width))
+    );
+    transition: 200ms;
+  }
+  
+  .about-btn:where(:hover, :focus) {
+    color: #fff;
+  }
+
+
+/* ABOUT-DIV 2 */
+
+.about-div2{
+    margin-top:40px ;
+    scale: 0;
+    transition: all;
+    animation: see1 3s forwards ease-in 1;
+    animation-delay: 3s;
+    float: right;
+    margin-right: 50px;
+   
+}
+@keyframes see1 {
+  0%{scale: 0;}
+  100%{scale: 1;}
+}
+
+.about-h2{
+    font-family: cursive;
+    
+}
+
+.about-para2{
+    font-size: larger;
+}
+
+
+
+
+/* ABOUT-DIV 3 */
+
+.about-div3{
+    margin-top: 40px;
+    scale: 0  ;
+    animation: see1 3s forwards ease-in 1;
+    animation-delay: 6s;
+    float: right;
+    margin-right: 30px;
+    
+}
+
+.about-h3{
+    font-family: cursive;
+    
+}
+
+.about-para3{
+    font-size: larger;
+}
+
+
+/* PICTURE   */
+
+.about-pic{
+
+  height: 600px;
+  width: 350px;
+  margin-top: 50px;
+  margin-left: 15px;
+  border-radius: 20px;
+  border: 5px solid cyan;
+
+}
+
+
+
+
+

@@ -1,0 +1,219 @@
+.project-body {
+background-color: #000000;
+height: 720px;
+width: 1470px;
+/* margin-top: -45px; */
+
+
+
+
+
+}
+
+.container {
+
+  max-height: 600px;
+  max-width: 1200px;
+  min-height: 600px;
+  min-width: 1100px;
+  display: flex;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+ 
+
+ 
+}
+
+.panel {
+  height: 600px;
+  width: 400px;
+  position: relative;
+  margin-top: 60px;
+
+  &:hover {
+    .card {
+      filter: blur(1.5px);
+    }
+    .card1 {
+      background-size: 215% 135%;
+    }
+    .card2 {
+      background-size: 115% 115%;
+    }
+    .card3 {
+      background-size: 155% 115%;
+    }
+    .title {
+      color: rgba(255, 255, 255, 0.2);
+    }
+    .border {
+      border: 1px solid rgba(255, 255, 255, 1);
+    }
+    .slide {
+      bottom: 0px;
+    }
+
+  }
+}
+.ring,
+.card,
+.border,
+.slide,
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.card {
+  background: #f0ead6;
+  position: relative;
+  transition: all 1s;
+  height: 600px;
+  width: 400px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  
+}
+
+.card1 {
+  background-image: url("../assets/Car.jpg");
+  background-repeat: no-repeat;
+  background-size: 200% 120%;
+}
+
+.card2 {
+  background-image: url("../assets/Face.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.card3 {
+  background-image: url("../assets/Bike.jpg");
+  background-repeat: no-repeat;
+  background-size: 140% 100%;
+}
+
+
+
+pre {
+  text-align: center;
+  position: absolute;
+  font-family: "Playfair Display";
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  transition: all 1s;
+  top: 0;
+ 
+}
+
+.para {
+  bottom: 0;
+  font-size: 23px;
+  font-family: "Raleway";
+  /* padding: 20px; */
+  margin: 0;
+  text-align: center;
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+
+.para1 {
+  bottom: 0;
+  font-size: 20px;
+  font-family: "Raleway";
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 80px;
+  color: aliceblue;
+}
+
+.border {
+  position: absolute;
+  border: 1px solid #080808;
+  height: 550px;
+  width: 350px;
+  transition: border 1s;
+  overflow: hidden;
+}
+
+.slide {
+  height: 550px;
+  width: 350px;
+  position: absolute;
+  border: 1px solid black;
+  bottom: -552px;
+  background: rgb(0, 0, 0);
+  transition: bottom 1s;
+  flex-direction: column;
+}
+
+.fa-plane {
+  font-size: 16px;
+}
+
+.project-1{
+  /* justify-content: space-around; */
+  margin-left: 50px;
+  /* margin-top: 50px; */
+  display: flex;
+
+
+}
+
+.project-2{
+  /* margin-top: 700px; */
+  margin-left: -120px;
+  
+  
+}
+
+/* BUTTON DESIGN  */
+
+ 
+
+.project-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  background-color: #080808 ;
+  outline: 3px #080808 solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+  
+}
+
+.project-button .text {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
+}
+
+.project-button svg path {
+  transition: 400ms;
+}
+
+.project-button:hover {
+  background-color: whitesmoke;
+
+}
+
+.project-button:hover .text {
+  color: #080808;
+}
+
+.project-button:hover svg path {
+  fill: #080808;
+}
+
